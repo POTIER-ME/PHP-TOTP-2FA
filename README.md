@@ -1,6 +1,6 @@
 # PHP-2FA
 
-A small php file that indegrate all the necessary for 2FA use in your project
+A small php file that indegrate all the necessary for 2FA (TOTP) use in your project
 
 ## Getting Started
 
