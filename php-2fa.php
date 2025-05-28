@@ -84,7 +84,7 @@ return $g_return;
 /*
 //demo mode :
 $my_secret=p2fa_generate(32); //generate 32 chars key
-$my_valid=p2fa_getTOTP($my_secret); //retrueve previous, actual and next correct 2FA code
+$my_valid=p2fa_getTOTP($my_secret); //retrieve previous, actual and next correct 2FA code
 $my_test="123456"; //2FA code I would like to test
 
  //check if $my_test is in $my_valid
