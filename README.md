@@ -1,42 +1,26 @@
 # PHP-2FA
 
-A small php file that indegrate all the necessary for 2FA (TOTP) use in your project
+A small php file that integrate all the necessary for 2FA (TOTP) use in your project
 
 ## Getting Started
 
-### Configure
-
-* You can change url to your heartbeat url in worker.pas
-``` 
-web_url:='';
-```
-*Please note : service name is "kerHB_GH", If you would like to change it, you need to change on source code because windows need to have same name in service as in source code
-
 ### Installation
 
-* Use windows cmd with admin rights
+* attach the file into your PHP project with require or require_once
 ```
-sc create kerHB_GH binPath="C:\Path-to-exe--system-user-need-to-have-access\file.exe" start=auto
-sc start kerHB_GH
-```
-
-### Removing
-
-* Use windows cmd with admin rights
-```
-sc delete kerHB_GH
+require_once("path_to_file.php");
 ```
 
-### Status checking
+### Use
 
-* Use windows cmd with admin rights
+* Use 1 of theses commands :
 ```
-sc query kerHB_GH
+$my_var_string=p2fa_generate(32); //generate 32 chars key
+$my_var_array=p2fa_getTOTP($my_secret); //retrieve previous, actual and next correct 2FA code
 ```
 
 ## Help
 
-* Some antivirus solution could block the app, be sure to use a path where you could easely add a exclusion rule if mandatory
 * Contact me if you have issue on this code
 
 ## Author
