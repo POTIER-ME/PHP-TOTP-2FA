@@ -21,7 +21,7 @@ $g_chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"; //for OTP, only thess chars can be 
 
  if (in_array($length, $g_length)) {
   //we add char 1 by 1
-  for ($i=0; $i<$length; $i++) {$g_return.=$car_ok[rand(0, strlen($g_chars)-1)];}
+  for ($i=0; $i<$length; $i++) {$g_return.=$g_chars[rand(0, strlen($g_chars)-1)];}
  }
 
 return $g_return;
